@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form action="/" method="POST" id='form'>
+    <h1>Admin</h1>
+    <hr />
+    <div class='container' id='container'>
+      <p>Title:</p>
+      <input name='title' type='text' />
+
+      <p>Date: </p>
+      <input name='publishdate' type='text' value={{ date }} />
+
+      <p>Category</p>
+      <select name='category'>
+        <option>node</option>
+        <option>python</option>
+        <option>csharp</option>
+        <option>rust</option>
+        <option>bash</option>
+        <option>security</option>
+      </select>
+
+      <p>Video</p>
+      <input name='video' type='text' />
+
+      <p>Content - Type:</p>
+      <select id='select' name='content[1][type]'>
+        <option>text</option>
+        <option>code</option>
+      </select>
+
+      <p>Content - Head:</p>
+      <input name='content[1][head]' type='text' />
+
+      <p>Content - Body: </p>
+      <textarea name='content[1][body]'></textarea>
+
+      <p>Content - Type:</p>
+      <select name='content[2][type]'>
+        <option>text</option>
+        <option>code</option>
+      </select>
+
+      <p>Content - Head:</p>
+      <input name='content[2][head]' type='text' />
+
+      <p>Content - Body: </p>
+      <textarea name='content[2][body]'></textarea>
+
+    </div>
+    <div class='button'>
+      <button id='add_section' type='button'>Add Section</button>
+    </div>
+    <div class='button'>
+      <button type='submit'>Submit</button>
+    </div>
+  </form>
+
+
+</body>
+<script src='main.js'></script>
+
+</html>

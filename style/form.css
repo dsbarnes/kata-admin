@@ -1,0 +1,38 @@
+
+form{
+  width: 750px;
+  margin: 0px auto 42px auto;
+}
+h1{
+  text-align: right;
+  margin: 42px 75px 0px 0px;
+}
+.container{
+  display: grid;
+  grid-template-columns: 24% 10% auto;
+  margin: 0px auto 0px auto;
+  width: 80%;
+  font-size: 18px;
+}
+input, select, textarea { 
+  grid-column-start: 3;
+  height: 24px;
+  border: 1px solid #7851a9;
+  margin: auto 0px auto 0px;
+}
+textarea{ 
+  height: 120px; 
+  margin-bottom: 24px;
+}
+
+.button{text-align: center;}
+button{
+  width: 40%;
+  height: 24px;
+  margin: 10px auto 0px auto;
+  background-color: #7851a9;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+}
+
